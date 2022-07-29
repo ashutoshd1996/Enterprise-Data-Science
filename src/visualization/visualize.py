@@ -20,13 +20,11 @@ app = dash.Dash()
 app.layout = html.Div([
 
     dcc.Markdown('''
-    #  Applied Data Science on COVID-19 data, as part of the Entreprise Data Science Course
+    #  Applied Data Science on COVID-19 data, as part of the Entreprise Data Science Course at TUKL
 
-    This is a responsive dashboard 
-    Goal of the project is to learn data science by applying a cross industry standard process,
-    it covers the full walkthrough of: automated data gathering, data transformations,
-    filtering and machine learning to approximating the doubling time, and
-    (static) deployment of responsive dashboard.
+    The prototype created contains automated data gathering, data transformations,
+    filtering and using Linear Regression (machine learning) to calculate the doubling time and a responsive dashboard to visualize it.
+
     '''),
 
     dcc.Markdown('''
@@ -37,7 +35,7 @@ app.layout = html.Div([
     dcc.Dropdown(
         id='country_drop_down',
         options=[ {'label': each,'value':each} for each in df_input_large['country'].unique()],
-        value=['US', 'Germany','Italy'], # pre-selected options
+        value=['India', 'Sri Lanka','Korea, South'], # pre-selected options
         multi=True
     ),
 
