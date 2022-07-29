@@ -20,8 +20,10 @@ app = dash.Dash()
 app.layout = html.Div([
 
     dcc.Markdown('''
-    #  Applied Data Science on COVID-19 data
-    Goal of the project is to teach data science by applying a cross industry standard process,
+    #  Applied Data Science on COVID-19 data, as part of the Entreprise Data Science Course
+
+    This is a responsive dashboard 
+    Goal of the project is to learn data science by applying a cross industry standard process,
     it covers the full walkthrough of: automated data gathering, data transformations,
     filtering and machine learning to approximating the doubling time, and
     (static) deployment of responsive dashboard.
