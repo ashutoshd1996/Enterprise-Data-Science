@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 import dash
 dash.__version__
 import dash_core_components as dcc
