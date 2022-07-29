@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 
 import os
 print(os.getcwd())
-df_input_large=pd.read_csv('../../data/processed/COVID_final_set.csv',sep=';')
+df_input_large=pd.read_csv('../data/processed/COVID_final_set.csv',sep=';')
 
 
 fig = go.Figure()
